@@ -30,9 +30,9 @@ export default function Header() {
           </div>
         </div>
         <Image
-          src="/ueye-desktop.svg"
+          src="/ueye-header.svg"
           alt="Header Image"
-          width={1505}
+          width={1205}
           height={510}
           className="header-image"
         />
