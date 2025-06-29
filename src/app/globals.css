@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-mulish), sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+:root {
+  --background: #0D0D0D;
+  --text: #F2F2F2;
+  --subtext: #B0B0B0;
+  --primary: #5151E5;
+  --primary-lower:rgba(58, 58, 205, 0.1);
+  --degrade: linear-gradient(180deg, #0D0D0D 0%, #1C1C1C 100%);
+  --card-background:rgba(247, 247, 247, 0.1);
+  --card-background-hover:rgba(28, 28, 28, 0.2);
+  --card-border: #666666;
+}
