@@ -19,9 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${mulish.variable}`}>
-        {children}
-      </body>
+      <head>
+        <link rel="icon" href="/LOGO-UEYE.svg" type="image/svg+xml" />
+      </head>
+      <body className={`${mulish.variable}`}>{children}</body>
     </html>
   );
 }
