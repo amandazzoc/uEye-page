@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 9.5rem 12rem 11.7rem;
+    padding: 11.2rem 12rem 11.7rem;
 }
 
 .final-content .container{
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     gap: 4.4rem;
-    padding: 11.2rem 6rem;
+    padding: 0 6rem 11.2rem;
 }
 
 .final-content .text-content{
@@ -35,7 +35,7 @@
     color: var(--text);
 }
 
-.final-content .title span{
+.final-content span{
     color: var(--primary);
 }
 
@@ -84,7 +84,54 @@
     color: var(--subtext);
 }
 
+.send-email-container{
+    margin-top: 9.5rem;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    background: var(--card-background);
+    border: .1rem solid var(--card-border);
+    border-radius: 4.4rem;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.send-email-container .subtitle{
+    text-align: center;
+    max-width: 81.2rem;
+}
+
+.send-email-container .email-input{
+    padding-right: 37rem;
+}
+
+.input-email-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.input-email-content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--subtext);
+}
+
 @media (max-width: 1200px) {
+    .final-content{
+        background-image: url('/background-mobile.svg');
+    }
+
     .final-content{
         padding: 3rem 5rem;
     }
@@ -99,6 +146,10 @@
 
     .final-content .subtitle{
         font-size: 1.6rem;
+    }
+
+    .send-email-container{
+        padding: 8rem 4rem;
     }
 }
 
@@ -117,5 +168,22 @@
 
     .final-content .subtitle{
         font-size: 1.6rem;
+    }
+
+    .send-email-container{
+        padding: 5.6rem 1rem;
+        gap: 3rem
+    }
+
+    .send-email-container .title{
+        text-align: center;
+    }
+
+    .input-email-content{
+        width: 100%;
+    }
+
+    .send-email-container .email-input{
+        padding-right: 0rem;
     }
 }
