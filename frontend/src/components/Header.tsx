@@ -45,7 +45,6 @@ export default function Header() {
           height={52}
           className="logo"
         />
-        <button className="demo-button">Receba a demo</button>
       </nav>
       <div className="container">
         <div className="content">
@@ -71,9 +70,11 @@ export default function Header() {
                 Receba a demo
               </button>
             </form>
-            {mensagem && <p style={{ color: "green" }}>{mensagem}</p>}
-            {erro && <p style={{ color: "red" }}>{erro}</p>}
           </div>
+          {mensagem && (
+            <p style={{ color: "green", fontSize: "1.4rem" }}>{mensagem}</p>
+          )}
+          {erro && <p style={{ color: "red", fontSize: "1.4rem" }}>{erro}</p>}
         </div>
         <Image
           src="/ueye-header.svg"
