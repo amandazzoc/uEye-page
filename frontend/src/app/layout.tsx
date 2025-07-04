@@ -23,7 +23,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/LOGO-UEYE.svg" type="image/svg+xml" />
       </head>
-      <body className={`${mulish.variable}`}>{children}</body>
+      <body className={`${mulish.variable}`}>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }
