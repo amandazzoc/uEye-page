@@ -14,13 +14,13 @@
 }
 
 .header .title {
-  font-size: 6.4rem;
+  font-size: 5.6rem;
   font-weight: 900;
   letter-spacing: -0.03rem;
 }
 
 .header .subtitle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--subtext);
   max-width: 83.6rem;
@@ -69,13 +69,6 @@
 }
 
 @media (max-width: 1200px) {
-  .header .title {
-    font-size: 5.6rem;
-  }
-
-  .header .subtitle {
-    font-size: 2rem;
-  }
 
   .header .navbar {
     padding: 1.2rem 5rem;
