@@ -60,11 +60,16 @@ export default function Header() {
           <div className="send-email">
             <form onSubmit={handleSubmit}>
               <input
-                type="text"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Digite seu e-mail"
                 className="email-input"
+                required
               />
-              <button className="demo-button">Receba a demo</button>
+              <button className="demo-button" type="submit">
+                Receba a demo
+              </button>
             </form>
             {mensagem && <p style={{ color: "green" }}>{mensagem}</p>}
             {erro && <p style={{ color: "red" }}>{erro}</p>}
