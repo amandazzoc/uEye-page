@@ -1,0 +1,45 @@
+/* [project]/src/styles/footer.css [app-client] (css) */
+.footer {
+  border-top: 1px solid var(--card-border);
+  background-color: var(--background);
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 12rem;
+  display: flex;
+}
+
+.footer-content {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.footer-content p {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.footer-content a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 768px) {
+  .footer {
+    padding: 2.4rem 1rem;
+  }
+
+  .footer-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_styles_footer_css_f9ee138c._.single.css.map*/

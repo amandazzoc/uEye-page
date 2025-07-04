@@ -1,0 +1,122 @@
+/* [project]/src/styles/problem.css [app-client] (css) */
+.problem-container {
+  padding: 3rem 12rem 1rem;
+}
+
+.problem-container .container {
+  background: var(--degrade);
+  border-radius: 4.4rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4.4rem;
+  padding: 3rem 12rem 11.2rem;
+  display: flex;
+}
+
+.problem-container .text-content {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  display: flex;
+}
+
+.problem-container .problem-text {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.problem-container .title {
+  color: var(--text);
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+
+.problem-container .title span {
+  color: var(--primary);
+}
+
+.problem-container .subtitle {
+  color: var(--subtext);
+  max-width: 80.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.problem-container .problems-container {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.4rem;
+  display: flex;
+}
+
+.problem-container .card-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 33.4rem;
+  padding: 2.4rem;
+  display: flex;
+}
+
+.problem-container .card-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.problem-container .card-description {
+  color: var(--subtext);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (width <= 1200px) {
+  .problem-container {
+    padding: 3rem 5rem;
+  }
+
+  .problem-container .container {
+    padding: 3rem 5rem 8rem;
+  }
+
+  .problem-container .title {
+    font-size: 3.6rem;
+  }
+
+  .problem-container .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .problem-container .problems-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .problem-container {
+    padding: 1rem;
+  }
+
+  .problem-container .container {
+    padding: 3rem 1rem 6.4rem;
+  }
+
+  .problem-container .title {
+    font-size: 3.2rem;
+  }
+
+  .problem-container .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .problem-container .card-container {
+    padding: 2.4rem 0;
+  }
+}
+
+/*# sourceMappingURL=src_styles_problem_css_f9ee138c._.single.css.map*/

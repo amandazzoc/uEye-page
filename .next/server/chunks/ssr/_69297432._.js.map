@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/amand/OneDrive/Desktop/ueye-page/src/app/components/Navbar.tsx"],"sourcesContent":["import Image from \"next/image\";\r\n\r\nexport default function Navbar() {\r\n    return (\r\n        <nav className=\"navbar\">\r\n            <Image\r\n                src=\"/LOGO-UEYE.svg\"\r\n                alt=\"uEye Logo\"\r\n                width={52}\r\n                height={52}\r\n                className=\"logo\"\r\n            />\r\n            <button className=\"demo-button\">\r\n                Receba a demo\r\n            </button>\r\n        </nav>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;;0BACX,8OAAC,6HAAA,CAAA,UAAK;gBACF,KAAI;gBACJ,KAAI;gBACJ,OAAO;gBACP,QAAQ;gBACR,WAAU;;;;;;0BAEd,8OAAC;gBAAO,WAAU;0BAAc;;;;;;;;;;;;AAK5C","debugId":null}},
+    {"offset": {"line": 61, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/amand/OneDrive/Desktop/ueye-page/src/app/page.tsx"],"sourcesContent":["import Navbar from \"./components/Navbar\";\n\nexport default function Home() {\n  return (\n    <div>\n      <Navbar />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC,mIAAA,CAAA,UAAM;;;;;;;;;;AAGb","debugId":null}}]
+}

@@ -1,0 +1,32 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+:root {
+  --background: #0d0d0d;
+  --text: #f2f2f2;
+  --subtext: #b0b0b0;
+  --primary: #5151e5;
+  --primary-lower: #3a3acd1a;
+  --degrade: linear-gradient(180deg, #0d0d0d 0%, #1c1c1c 100%);
+  --card-background: #1c1c1c1a;
+  --card-background-hover: #1c1c1c33;
+  --card-border: #666;
+}
+
+
+/*# sourceMappingURL=src_app_globals_b805903d.css.map*/
