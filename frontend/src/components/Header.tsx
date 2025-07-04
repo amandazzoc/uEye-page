@@ -1,7 +1,40 @@
+'use client';
 import Image from "next/image";
 import "../styles/header.css"; 
+import { useState } from "react";
+import axios from "axios";
 
 export default function Header() {
+
+  const [email, setEmail] = useState("");
+  const [mensagem, setMensagem] = useState("");
+  const [erro, setErro] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/subscribe`,
+        {
+          email,
+        }
+      );
+
+      setMensagem(res.data.message);
+      setErro("");
+      setEmail("");
+    } catch (err) {
+      console.error(err);
+      setMensagem("");
+      if (axios.isAxiosError(err)) {
+        setErro(err.response?.data?.error || "Erro ao se inscrever");
+      } else {
+        setErro("Erro ao se inscrever");
+      }
+    }
+  };
+
   return (
     <div className="header">
       <nav className="navbar">
@@ -25,8 +58,16 @@ export default function Header() {
             </p>
           </div>
           <div className="send-email">
-            <input type="text" placeholder="Digite seu e-mail" className="email-input" />
-            <button className="demo-button">Receba a demo</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Digite seu e-mail"
+                className="email-input"
+              />
+              <button className="demo-button">Receba a demo</button>
+            </form>
+            {mensagem && <p style={{ color: "green" }}>{mensagem}</p>}
+            {erro && <p style={{ color: "red" }}>{erro}</p>}
           </div>
         </div>
         <Image
