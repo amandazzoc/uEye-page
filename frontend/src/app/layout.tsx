@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const mulish = Mulish({
   variable: "--font-mulish",
